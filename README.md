@@ -34,7 +34,7 @@ As mentioned, that data used for this project comes from multiple datasets from 
 
 This file is a key to merge movie identifiers with IMDB Database and The Movie DataBase. We will be focusing on the MovieLens database for this analysis and will not need this file.
 
-![links head](image/links_df_head.png)
+![links head](links-csv-head.png)
 
 ### movies_df
 
