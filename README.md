@@ -156,3 +156,7 @@ Allowing users to rate movies that they watch after our recommendation would be 
 ### Deployment 
 
 We would like to be able to deploy the app to the public if given more time and resources to host our model in the cloud.
+<<<<<<< HEAD
+=======
+
+>>>>>>> de142ae83ca258769bcbc1e7fc46c348542de779
