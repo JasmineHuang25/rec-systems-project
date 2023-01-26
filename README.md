@@ -2,7 +2,7 @@
 
 Authors: Jasmine Huang, Jonathan Fetterolf, Matthew Duncan, & Michael Licul
 
-#add image logo
+![header](images/header.png)
 
 ## Overview
 
@@ -33,7 +33,8 @@ As mentioned, that data used for this project comes from multiple datasets from 
 ### links_df 
 
 This file is a key to merge movie identifiers with IMDB Database and The Movie DataBase. We will be focusing on the MovieLens database for this analysis and will not need this file.
-#add links_df head
+
+![links head](image/links_df_head.png)
 
 ### movies_df
 
@@ -46,18 +47,21 @@ There are 9737 unique movie titles. Repeats for 5 movies:
 - Confessions of a Dangerous Mind (2002) 2
 - War of the Worlds (2005) 2
 
-#add image with movie count genere
+![movie count genere](image/movie_count_by_genere.png)
 
 ### ratings_df
 
 This .CSV will be the primary datafile for this analysis. It includes relevant information including userId, rating, and movieId. timestamp is not relevant for this analysis and will be dropped. 
 #add ratings_df head image
 
+![ratings_df head](image/ratings_df_head.png)
+
 ### tags_df
 
 This .CSV could be helpful for analysis as it provides keyword insights to each of the films. timestamp will not be helpful for this analysis and will be dropped later.
-#add tags_df head image
-#add counts of movie tags
+
+![tags head](images/tags_df_head_image.png)
+![tags count](images/Counts_of_movie_tags.png)
 
 ## Creating New DataFrame
 
@@ -73,17 +77,21 @@ We will be using the Surprise library for this analysis. This library requires t
 ### First Baseline Model
 
 Setting up a baseline model using Surprise's `BaselineOnly` algorithm. 
-#add image about FBM 
 
-To get a more informative result of the baseline model, we have set up a cross-validation model. The results of the baseline model aren't bad with an RMSE of .87 and an MAE of .67
-#add cross val image
+![FBM](image/FBM.png)
+
+To get a more informative result of the baseline model, we have set up a cross-validation model. The results of the baseline model aren't bad with an RMSE of .87 and an MAE of .67.
+
+![Cross val FBM](image/cross_val_FBM.png)
 
 ### Checking Other Models 
 
 To ensure we're using the best model for our analysis, we will be running all potential algorithms through three-fold cross-validation.
 
 Our baseline model is still one of the top performers, though SVD++ provided the best results with a mean MAE of .668 and a mean RMSE of .87. 
-#add both images checking other models
+
+![COM](image/check_other_models_1.png)
+![COM 2](image/check_other_models_2.png)
 
 ### GridSearch Top Model
 
