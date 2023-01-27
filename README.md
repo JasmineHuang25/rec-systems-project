@@ -1,5 +1,7 @@
 # Click That Recommendation Button 
 
+[Non-Technical Presentation Slides](https://github.com/fetterollie/rec-systems-project/blob/c5786878c788b68a9221e30111b0448c94d1eb25/presentation.pdf)
+
 Authors: Jasmine Huang, Jonathan Fetterolf, Matthew Duncan, & Michael Licul
 
 ![header](images/CTRB.png)
@@ -127,7 +129,7 @@ Using the Python script located in the functions.py file within this repo. We ar
 When users create a new profile, they will be asked to create a username and password that can be used to access ratings that they have previously submitted. Users are able to make new ratings after logging back in to their profile or skip ahead to just pulling recommendations.
 
 ## Deployment Proof of Concept
-#almsot done 
+As part of this project, we have began creating a deployable app utilizing Gradio. The app is not finished but has some functionality below as a proof of concept.
 ![Web App Preview](images/webappprev.png)
 
 ## Results and Conclusion
@@ -153,14 +155,4 @@ Given more time we'd like to utilize GridSearch on different algorithms for this
 It would be nice to include a way to incorporate user feedback on recommendations as part of the deployed app. This could help to gather more data and to make our model more accurate.
 
 Allowing users to rate movies that they watch after our recommendation would be an additional performance check for the validity of the model.
-
-### Deployment 
-
-We would like to be able to deploy the app to the public if given more time and resources to host our model in the cloud.
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> de142ae83ca258769bcbc1e7fc46c348542de779
 
