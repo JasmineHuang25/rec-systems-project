@@ -150,3 +150,32 @@ It would be nice to include a way to incorporate user feedback on recommendation
 
 Allowing users to rate movies that they watch after our recommendation would be an additional performance check for the validity of the model.
 
+```
+├── Exploration Notebooks
+│   ├── cleaning_up.ipynb
+│   ├── jasmine_notebook.ipynb
+│   ├── jon_notebook.ipynb
+│   ├── matt_notebook.ipynb
+│   ├── mike_notebook.ipynb
+│   └── web_app.ipynb
+├── data
+│   ├── dataREADME.txt
+│   ├── links.csv
+│   ├── movies.csv
+│   ├── ratings.csv
+│   ├── tags.csv
+│   └── user2_prediction_result.csv
+├── images
+│   ├── CTRB.png
+│   ├── Counts-of-movie-tags.png
+│   ├── header.png
+│   ├── movie-count-by-genere.png
+│   └── webappprev.png
+├── .gitignore
+├── LICENSE
+├── README.md
+├── environment.yml
+├── functions.py
+├── index.ipynb
+└── presentation.pdf
+```
