@@ -52,7 +52,7 @@ There are 9737 unique movie titles. There are repeated entries for the following
 4. Confessions of a Dangerous Mind (2002) 2
 5. War of the Worlds (2005) 2
 
-![movie count](images/movie-count-by-genere.png)
+![Count by Genre](images/movie-count-by-genere.png)
 
 ### `ratings_df`
 
@@ -61,6 +61,7 @@ The DataFrame, ```ratings_df``` will be ther primary DataFrame used in the analy
 ### `tags_df`
 
 The DataFrame, ```tags_df``` will be helpful for analysis as it provides keyword insights to each of the films.
+![Counts by Tag](images/Counts-of-movie-tags.png)
 
 ## Combined DataFrame
 
