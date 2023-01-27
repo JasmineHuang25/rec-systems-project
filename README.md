@@ -2,7 +2,7 @@
 
 Authors: Jasmine Huang, Jonathan Fetterolf, Matthew Duncan, & Michael Licul
 
-![header](images/header.png)
+![header](images/CTRB.png)
 
 ## Overview
 
@@ -128,6 +128,7 @@ When users create a new profile, they will be asked to create a username and pas
 
 ## Deployment Proof of Concept
 #almsot done 
+![Web App Preview](images/webappprev.png)
 
 ## Results and Conclusion
 
