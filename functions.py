@@ -451,8 +451,40 @@ def final_rec(user_id, genre = None, number_of_predictions= 10, main_df = None, 
         print('You did not select a valid response.')
       
 #     new_user_df = main_df
-#     return main_df
+
 
 
 def to_1D(series):
  return pd.Series([x for _list in series for x in _list])
+
+# gradio deployment
+
+def top_slice(x=None, y=None, final_predictions = None):
+    slice_df= final_predictions[x:y]
+    return slice_df
+
+def test_predict(user = 2, dataframe = None, movies_df=None, model=None):
+    
+    # creating a dataframe with a specified user
+    user_ratings = dataframe[dataframe['userId'] == user]\
+    [['userId', 'movieId', 'rating']]
+
+    # creating a dataframe with movies not yet reviewed
+    user_predict = list(movies_df[~movies_df['movieId'].isin\
+                                  (user_ratings['movieId'].values)].movieId.values)
+    
+    # getting predictions
+    predictions = []
+    for movie in user_predict:
+        predictions.append((movies_df['title'].loc[movies_df['movieId'] == movie]\
+                            .values[0], model.predict(user, movie)[3]))
+        
+    # creating a dataframe to store predictions
+    predicted_df = pd.DataFrame(predictions, columns=['title', 'prediction'])
+    
+    # merging in movies_df so that we can get genres
+    final_prediction = predicted_df.merge(movies_df).drop('movieId', axis=1).\
+    sort_values('prediction', ascending=False)
+    
+    return final_prediction
+
