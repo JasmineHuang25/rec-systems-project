@@ -2,7 +2,7 @@
 
 Authors: Jasmine Huang, Jonathan Fetterolf, Matthew Duncan, & Michael Licul
 
-![header](images/header.png)
+![header](images/CTRB.png)
 
 ## Overview
 
